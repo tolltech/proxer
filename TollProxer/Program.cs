@@ -1,3 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
+using TollProxer;
 
-Console.WriteLine("Hello, World!");
+Console.WriteLine("Hello");
+
+var proxyListener = new ProxyListener("http://localhost:8888/");
+
+proxyListener.Start();
+
+Console.WriteLine("Bye");
